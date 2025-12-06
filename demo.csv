@@ -1,0 +1,9 @@
+host,port,status,title,server,cert_cn,cert_expires
+google.com,443,open,301 Moved,gws,*.google.com,Jan 19 08:33:42 2026 GMT
+google.com,80,open,301 Moved,gws,,
+scanme.nmap.org,443,closed,,,,
+scanme.nmap.org,80,open,Go ahead and ScanMe!,Apache/2.4.7 (Ubuntu),,
+example.com,443,open,Example Domain,,*.example.com,Jan 15 23:59:59 2026 GMT
+example.com,80,open,Example Domain,,,
+httpbin.org,80,open,httpbin.org,gunicorn/19.9.0,,
+httpbin.org,443,open,httpbin.org,gunicorn/19.9.0,httpbin.org,Aug 17 23:59:59 2026 GMT
