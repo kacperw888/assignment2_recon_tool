@@ -1,28 +1,5 @@
 {
   "results": {
-    "google.com": {
-      "443": {
-        "status": "open",
-        "http": {
-          "status_code": 301,
-          "server_header": "gws",
-          "title": "301 Moved"
-        },
-        "tls": {
-          "subject_cn": "*.google.com",
-          "notAfter": "Jan 19 08:33:42 2026 GMT"
-        }
-      },
-      "80": {
-        "status": "open",
-        "http": {
-          "status_code": 301,
-          "server_header": "gws",
-          "title": "301 Moved"
-        },
-        "tls": null
-      }
-    },
     "scanme.nmap.org": {
       "443": {
         "status": "closed",
@@ -60,29 +37,6 @@
           "title": "Example Domain"
         },
         "tls": null
-      }
-    },
-    "httpbin.org": {
-      "80": {
-        "status": "open",
-        "http": {
-          "status_code": 200,
-          "server_header": "gunicorn/19.9.0",
-          "title": "httpbin.org"
-        },
-        "tls": null
-      },
-      "443": {
-        "status": "open",
-        "http": {
-          "status_code": 200,
-          "server_header": "gunicorn/19.9.0",
-          "title": "httpbin.org"
-        },
-        "tls": {
-          "subject_cn": "httpbin.org",
-          "notAfter": "Aug 17 23:59:59 2026 GMT"
-        }
       }
     }
   }
