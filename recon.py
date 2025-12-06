@@ -17,14 +17,14 @@ import sys
 # ARGUMENT PARSING
 # --------------------------------------
 def get_args():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--targets", required=True)
-    parser.add_argument("--ports", required=True)
-    parser.add_argument("--http", action="store_true")
-    parser.add_argument("--tls", action="store_true")
-    parser.add_argument("--output", required=True)
-    parser.add_argument("--workers", type=int, default=20)
-    parser.add_argument("--timeout", type=float, default=5.0)
+    parser = argparse.ArgumentParser(description="Recon Tool")
+    parser.add_argument("--targets", required=True, help="Path to file (one host per line; allow host or host:port)")
+    parser.add_argument("--ports", required=True, help="Comma list or ranges (e.g., 80,443,8000-8100)")
+    parser.add_argument("--http", action="store_true", help="Probe HTTP(S) services and extract title, meta description, Server header")
+    parser.add_argument("--tls", action="store_true", help="Attempt TLS retrieval for ports that speak TLS")
+    parser.add_argument("--output", required=True, help="Path prefix for results; tool writes PREFIX.results.json and PREFIX.results.csv")
+    parser.add_argument("--workers", type=int, default=20, help="Concurrent TCP workers (default 20)")
+    parser.add_argument("--timeout", type=float, default=5.0, help="Per-connection timeout in seconds (float OK)")
     return parser.parse_args()
 
 # --------------------------------------
