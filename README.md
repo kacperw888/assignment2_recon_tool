@@ -50,4 +50,4 @@ python recon.py --targets targets.txt --ports 80,443 --http --tls --workers 50 -
 
 
 ## Video Demo
-- Link: [text](https://www.youtube.com/watch?v=Q8oQk4zSUKQ)
+- Link: [https://www.youtube.com/watch?v=Q8oQk4zSUKQ](https://www.youtube.com/watch?v=Q8oQk4zSUKQ)
